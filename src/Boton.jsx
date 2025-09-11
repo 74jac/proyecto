@@ -1,7 +1,7 @@
 export const Boton = ({texto, color}) => {
     const estilos = {
         backgroundColor: color,
-        color: "white",
+        color: "red",
     }
     return <button style={estilos}>{texto}</button>;
 }; 

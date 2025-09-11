@@ -6,7 +6,7 @@ export const ItemList = ({ lista }) => {
             {lista.length ? (
             lista.map((prod) => (
             <Item key={prod.id} {...prod}>
-                <button>Soy un boton</button>
+                <button>Comprar</button>
             </Item>    
         ))
     ) : (
