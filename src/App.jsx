@@ -10,7 +10,7 @@ function App() {
       <div>
         <Header/>
         {<ItemListContainer titulo={"Bienvenido a su tienda"} /> }
-        {<ItemDetailContainer />}
+        {/* {<ItemDetailContainer />} */}
         <Footer />
       </div>
     </> 
