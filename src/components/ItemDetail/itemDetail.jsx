@@ -4,7 +4,7 @@ export const ItemDetail = ({ detail }) => {
 
     return (
         <Item {...detail}>
-            <button>Detalles</button>
+            <button>Enviar al Carrito</button>
 
         </Item>
 

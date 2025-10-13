@@ -1,7 +1,21 @@
-.contenedor {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-
+.contenedor{
+    display:flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    margin-top: 20px;
+           
 }
+
+.caja {
+    background-color: white;
+    padding: 10px;
+    margin:5px;
+    flex-grow: 1;
+    flex-basis: 100px;
+    
+    
+}
+

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/itemDetail";
+import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({});
 
+    const { id } = useParams();
     useEffect(() => {
         fetch("/data/products.json")
             .then((res) => {
@@ -14,7 +16,7 @@ export const ItemDetailContainer = () => {
                 return res.json();
             })
             .then((data) => {
-                const found = data.find((p) => p.id === "3");
+                const found = data.find((p) => p.id === id);
                 if (found) {
                     setDetail(found);
                 } else {

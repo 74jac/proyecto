@@ -4,6 +4,7 @@ import { ItemList } from "../ItemsList/ItemList";
 export const ItemListContainer = ( { titulo }) => {
     const [products ,setProducts] = useState ([]);
 
+    
     useEffect (() => {
         fetch ("/data/products.json")
             .then ((res) => {

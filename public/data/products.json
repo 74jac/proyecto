@@ -1,26 +1,26 @@
 [
   {
     "id": "1",
-    "name": "Budín de limón",
-    "price": 4500,
-    "category": "dulce",
-    "description": "Budín húmedo de limón con glaseado casero.",
-    "imageUrl": "/images/budin-limon.jpg"
+    "name": "Lavarropas Samsung 9kg",
+    "price": 850000,
+    "category": "Inverter",
+    "description": "AUTOMÁTICO WW95AA046BXUBG INVERTER 9.5KG",
+    "imageUrl": "/images/inverter.jpg"
   },
   {
     "id": "2",
-    "name": "Pan de masa madre",
-    "price": 3200,
-    "category": "salado",
-    "description": "Hogaza de 750 g con fermentación lenta de 24 horas.",
-    "imageUrl": "/images/pan-masa-madre.jpg"
+    "name": "Lavarropas Deram 6Kg.",
+    "price": 8000000,
+    "category": "Eco",
+    "description": "ECO carga frontal 6kg 800rpm",
+    "imageUrl": "/images/drean.jpg"
   },
   {
     "id": "3",
-    "name": "Croissant de manteca",
-    "category": "dulce",
+    "name": "Lavarropas CODINI 6 Kg.",
+    "category": "Inverter",
     "price": 1200,
-    "description": "Hojaldre 100% manteca, crujiente por fuera y tierno por dentro.",
-    "imageUrl": "/images/croissant.jpg"
+    "description": "Automatico Inv Wash 6010Gi 6K 1000Rpm",
+    "imageUrl": "/images/codini.jpg"
   }
 ]

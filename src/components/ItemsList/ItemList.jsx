@@ -1,5 +1,6 @@
 import './ItemsList.css'
 import { Item } from "../Item/Item"
+import { Link } from 'react-router-dom';
 
 export const ItemList = ({ lista }) => {
     return (
@@ -7,9 +8,9 @@ export const ItemList = ({ lista }) => {
         <div className="galeria">
                 {lista.length ? (
                     lista.map((prod) => (
-                        <Item key={prod.id} {...prod}>
-                            <button>Comprar</button>
-                        </Item>
+                        <Link to= {`/detail/${prod.id}` }>
+                           <Item {...prod} />
+                        </Link>
                     ))
                 ) : (
                     <p>No hay productos</p>
