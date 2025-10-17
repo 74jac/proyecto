@@ -8,7 +8,7 @@ export const ItemList = ({ lista }) => {
         <div className="galeria">
                 {lista.length ? (
                     lista.map((prod) => (
-                        <Link to= {`/detail/${prod.id}` }>
+                        <Link to= {`/detail/${prod.id}` } key={prod.id}>
                            <Item {...prod} />
                         </Link>
                     ))
