@@ -14,7 +14,7 @@ export const Nav = () => {
                 <div className="caja"><Link to={"/category/inverter"}> Inverter </Link> </div>
                 <div className="caja"> <Link to={"/category/eco"}> Eco </Link> </div>
                 <div className="caja"><Link to={"/carrito"}>Carrito: </Link> 
-                    {/* {getTotalItems() > 0 && (<span>{getTotalItems()} </span> )} */}
+                    {getTotalItems() > 0 && (<span>{getTotalItems()} </span> )}
                     
                  </div>
                   
