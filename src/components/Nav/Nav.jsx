@@ -9,17 +9,14 @@ export const Nav = () => {
     return (
         <nav>
        
-            <div className="contenedor">
-                <div className="caja"> <Link to={"/"}> Home </Link> </div>
-                <div className="caja"><Link to={"/category/inverter"}> Inverter </Link> </div>
-                <div className="caja"> <Link to={"/category/eco"}> Eco </Link> </div>
-                <div className="caja"><Link to={"/carrito"}>Carrito: </Link> 
-                    {/* {getTotalItems() > 0 && (<span>{getTotalItems()} </span> )} */}
-                    
-                 </div>
+            <lu className="contenedor">
+                <li className="caja"> <Link to={"/"}> Home </Link> </li>
+                <li className="caja"><Link to={"/category/inverter"}> Inverter </Link> </li>
+                <li className="caja"> <Link to={"/category/eco"}> Eco </Link> </li>
+                <li className="caja"><Link to={"/carrito"}>Carrito: {getTotalItems() > 0 && (<span>{getTotalItems()} </span> )}</Link></li>
                   
                 
-            </div>
+            </lu>
 
          
             
