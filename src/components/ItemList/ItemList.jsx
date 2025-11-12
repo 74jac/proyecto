@@ -1,6 +1,6 @@
-import './ItemsList.css'
-import { Item } from "../Item/Item"
+import { Item } from "../Item/Item";
 import { Link } from 'react-router-dom';
+import './ItemList.css';
 
 export const ItemList = ({ lista }) => {
     return (
@@ -14,7 +14,7 @@ export const ItemList = ({ lista }) => {
                     ))
                 ) : (
                     <p>No hay productos</p>
-                )};
+                )}
 
         </div>
         

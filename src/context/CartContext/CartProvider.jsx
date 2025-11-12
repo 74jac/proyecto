@@ -1,11 +1,8 @@
-import { useState } from "react"
-import { CartContext } from "./CartContext"
+import { useState } from "react";
+import { CartContext } from "./CartContext";
 
 export const CartProvider = ({ children }) => {
-
     const [cart, setCart] = useState([]);
-
-
 
     const exists = (id) => {
 
@@ -17,7 +14,7 @@ export const CartProvider = ({ children }) => {
         if (exists(item.id)) {
             const updatedCart = cart.map((prod) => {
                 if (prod.id === item.id) {
-                    return { ...prod, quantity: prod.quantity + item.quantity }
+                    return { ...prod, quantity: prod.quantity + item.quantity };
                 } else {
                     return prod;
                 }
@@ -32,31 +29,37 @@ export const CartProvider = ({ children }) => {
     };
 
     const deleteItem = (id) => {
-        const filtered = cart.filter ((p) => p.id !== id)
+        const filtered = cart.filter((p) => p.id !== id)
         setCart(filtered);
         alert("producto eliminado"); 
     };
 
-    
     const clearCart = () => {
         setCart([]);
     };
- 
+    
     const getTotalItems = () => {
-/*         if (cart.length) {
-            return cart.length;
-        }  */
-       const getTotalItems = cart.reduce((acc, p) => acc + p.quantity, 0);
-       return getTotalItems;  
-    };
 
+       const totalItems = cart.reduce((acc, p) => acc + p.quantity, 0);
+       return totalItems;  
+    };
+    
     const total = () => {
         const total = cart.reduce((acc, p) => acc + p.price * p.quantity, 0);
-        return Math.round((total * 100) / 100); 
-    }
+        return Math.round(total * 100) / 100; 
+    };
 
-    console.log(cart);
-    const values = { cart, addItem, clearCart, getTotalItems, deleteItem, total }
+    const checkout = () => {
+        const ok = confirm("Seguro que quiere finaliza la compra?")
+        
+        if(ok) {
+        alert("Compra realizada!");
+        clearCart();
+                
+        }
+    };
+    
+    const values = { cart, addItem, clearCart, getTotalItems, deleteItem, total, checkout };
 
     return <CartContext.Provider  value={values}> {children} </CartContext.Provider>;
 }; 
