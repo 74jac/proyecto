@@ -49,7 +49,7 @@ export const Login = () => {
                 onChange={handleChange}
                 />
             </div>
-            <butto type="submit">Iniciar sesión</butto>
+            <button type="submit">Iniciar sesión</button>
 
         </form>
 };

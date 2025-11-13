@@ -20,4 +20,6 @@ export const validateProducts = (product, fileRequired = true) => {
         errors.image = "La imagen es obligatoria."
     }
 
+    return errors;
+
 };

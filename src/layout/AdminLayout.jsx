@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 
 export const AdminLayout = () => {
-    return <section>
+    return (
+    <section>
         <Outlet />
-    </section>
-} 
+    </section>);
+}; 

@@ -3,7 +3,7 @@ import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({children}) => {
     const [user, setUser] = useState(() => {
-       const saved = sessionStorage.getItem("session")
+       const saved = sessionStorage.getItem("session");
        if (saved){
         return JSON.parse(saved);
        } 
@@ -11,7 +11,7 @@ export const AuthProvider = ({children}) => {
     });
 
     const login = (name, password) => {
-        if(name === "admin" && password === "1234") {
+        if (name === "admin" && password === "1234") {
             const session = { name };
             setUser(session)
             sessionStorage.setItem("session", JSON.stringify(session));
