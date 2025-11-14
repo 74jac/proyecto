@@ -7,7 +7,7 @@ export const ItemListContainer = ( { titulo }) => {
     const { category } = useParams();
     
     useEffect (() => {
-        fetch ("/data/products.json")
+        fetch ("https://6900b99fff8d792314bb27e3.mockapi.io/products")
             .then ((res) => {
                 if(!res.ok) {
                     throw new Error("Hubo un propblema al buscar producto");
